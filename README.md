@@ -7,10 +7,11 @@ This repository provides codebase for two hypotheses (1) testing emergent schemi
 **Project website:** in preparation 
 
 **Project structure:**
-BTOM-MAS/
-├── data/                   # Dataset processing and loading
-├── experiments/           # Training and evaluation scripts
-├── results/              # Experimental results
-└── notebooks/           # Analysis and visualization notebooks
+
+BTOM-MAS \
+├── data \
+├── experiments \
+├── results \
+└── notebooks  
 
 more details coming soon. 
