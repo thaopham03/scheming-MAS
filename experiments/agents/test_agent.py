@@ -13,13 +13,14 @@ response = model.generate_content("Say 'Gemini working!'")
 print(f"Gemini: {response.text}")
 
 # Test Llama
+print("Loading Llama model...")
 pipe = pipeline("text-generation", model="meta-llama/Llama-3.1-8B-Instruct")
 messages = [
-    {"role": "user", "content": "Who are you?"},
+    {"role": "user", "content": "Say 'Llama working!'"},
 ]
-pipe(messages)
 
 print("Testing Llama...")
-print(f"Llama: {pipe(messages)}")
+llama_response = pipe(messages, max_new_tokens=10, do_sample=False)
+print(f"Llama: {llama_response[0]['generated_text'][-1]['content']}")
 
 print("Both models tested successfully!")
