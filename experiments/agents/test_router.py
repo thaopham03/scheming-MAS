@@ -6,12 +6,15 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 
-OPENROUTER_API_KEY="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"
-
 def API_call(model, messages, temperature=0.3):
     """
     Generic function to call OpenRouter API
     """
+    OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+
+    if not OPENROUTER_API_KEY:
+        raise ValueError("OPENROUTER_API_KEY not found in environment variables")
+    
     response = requests.post(
         "https://openrouter.ai/api/v1/chat/completions",
         headers={
