@@ -1,19 +1,4 @@
-# Detecting in scheming behaviour in Multi-agent system: Bayesian Theory of Mind Approach
+## Scheming Ability in LLM-to-LLM Strategic Interactions 
 
-This repository provides codebase for two hypotheses (1) testing emergent scheming behaviour in multi-agent context & (2) implementing Bayesian Theory of Mind in language model agents to detect scheming behaviour from their collaborative partner(s). 
-
-**Project Proposal:** [link](https://drive.google.com/file/d/1y8KJzp4TInPlZYcIJwlnW06si1Bis-cS/view)
-
-**Project website:** in preparation 
-
-**Project structure:**
-
-```
-BTOM-MAS 
-├── data 
-├── experiments
-├── results 
-└── notebooks  
-```
-
-more details coming soon. 
+Abstract: The deployment of large language models (LLMs) as autonomous agents in multi-agent environments introduces emergent deception risks. We investigate scheming ability in multi-agent scenarios, where an AI agent secretly pursues misaligned objectives in interactions with another AI agent. Building on single-agent scheming frameworks, we examine how agents reason about other AI systems and how effectively they employ their scheming strategies in game-theoretic settings. We evaluate four reasoning models (GPT-4o, Llama-3.3-70b-instruct, Gemini-2.5-pro, and Claude-3.7-
+Sonnet) across two experimental paradigms: cheap talk, a type of signaling game, and the adversarial peer evaluation scenario. Results demonstrate that models can employ basic scheming strategies up to a minimal level of sophisticated scheming strategies, such as goal concealment, trust exploitation, self-preservation, and escalation willingness. Scheming performance does not vary significantly across the two games, except for GPT-4o in the Cheap Talk game. This suggests scheming capability might be context-dependent, with different models exhibiting distinct strategic profiles rather than uniform capabilities. Additionally, several environmental properties can affect AI agents’ scheming performance or enable them to scheme against other agents beyond what is necessary. These findings reveal that scheming capabilities in multi-agent contexts, pose distinct risks requiring targeted evaluation frameworks and safety measures as AI agents become increasingly autonomous.
